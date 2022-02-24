@@ -1,21 +1,21 @@
 {
-  "name": "social-links",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "nodemon index.js",
-    "format": "prettier --write .",
-    "pre-commit": "yarn format && git add -A ."
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.2",
-    "husky": "^7.0.4",
-    "prettier": "^2.5.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+    "name": "social-links",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon index.js",
+        "format": "prettier --write .",
+        "pre-commit": "yarn format && git add -A ."
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.2",
+        "husky": "^7.0.4",
+        "prettier": "^2.5.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
 }
