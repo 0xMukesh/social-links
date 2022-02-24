@@ -1,7 +1,7 @@
 const cors = require('cors')
 const express = require('express')
-const data = require('./links.json')
-const config = require('./config.json')
+const data = require('./data/links.json')
+const config = require('./data/config.json')
 
 const app = express()
 
