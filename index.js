@@ -35,6 +35,19 @@ app.get("/project/:name", async (req, res) => {
   }
 });
 
+app.get("/misc", async (req, res) => {
+  res.redirect(`${config.BASE_URL}`);
+});
+
+app.get("/misc/:name", async (req, res) => {
+  const slugLink = data["misc"][req.params.name];
+  if (slugLink === undefined) {
+    res.redirect(`${config.BASE_URL}`);
+  } else {
+    res.redirect(slugLink);
+  }
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is listening at port ${port}`);
